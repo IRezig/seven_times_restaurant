@@ -1,0 +1,434 @@
+/* white=#c9c1ac */
+/* red=#d3325f */
+
+.info
+{
+	background: #c9c1ac;
+}
+body
+{
+	font-family: 'Monsieur La Doulaise', cursive;
+	color: #c9c1ac;
+	background : url(../img/coverr.jpeg) ;
+	background-position: center;
+    background-size:  cover;
+    background-attachment:  fixed;
+    background-repeat: no-repeat;
+}
+.review-text p
+{
+	font-size: 1rem;
+	font-family: cursive;
+}
+.img-brand
+{
+	height: 30px;
+	width: 50px;
+}
+.copie-text
+{
+	font-size: 1rem;
+	font-family: cursive;
+}
+.primary-color
+{
+	color:#070707; 
+}
+
+.social-color
+{
+	font-size: 0.9rem;
+	color: gray; 
+}
+.info h2
+{
+	word-spacing: 0.6rem;
+}
+.info a 
+{
+	transition: color 2s ease-in-out;
+}
+.info a:hover
+{
+	color: #24242424;
+}
+/*header*/
+#header
+{
+	min-height: calc(100vh - 94px); 
+	background: linear-gradient(rgba(0,0,1,0.5),rgba(1,0,0.5,0.5)), url(../img/banner-bcg.png);
+	background-position: center;
+	background-size: cover;/*background couvred by the image*/
+	background-attachment: fixed; /*fix the image */
+	background-repeat: no-repeat;/*don't reapet the picture even if it*/
+	position: relative;
+}
+.height-90
+{ 
+	min-height: calc(100vh - 94px); 
+}
+.banner h1
+{
+	padding-bottom: 3%;
+	font-size: 52px;
+	animation: fromLeft;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+
+}
+@keyframes fromLeft{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	50%{
+		transform: translateX(30px);
+	}
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+
+}
+
+
+.main-btn
+{
+	color: #c9c1ac;
+	font-size: 2rem;
+	border: 2px solid #070707;
+	transition: all 2s ease-in-out;
+
+}
+.main-btn:hover
+{
+	color: #BADEFC;
+
+}
+.seven-btn
+{
+	animation: fromRight;
+	animation-duration: 4s;
+	animation-delay: 1s;
+	opacity: 0;
+	animation-fill-mode: forwards; 
+}
+@keyframes fromRight{
+	0%{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	50%{
+		transform: translateX(30px);
+	}
+	100%{
+		transform: translateX(0px);
+		opacity: 1;
+		
+	}
+
+}
+.header-link
+{
+	display: inline-block;
+	font-size: 30px;
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	background: transparent;
+	border-radius: 10px;
+	transition: all 2s ease;
+	animation: fromBottom;
+	animation-duration: 4s;
+	animation-iteration-count:infinite;
+}
+.header-link:hover
+{
+	color: #242424;
+}
+@keyframes fromBottom
+{
+	0%{
+		transform: translateY(-10px);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(-10px);
+	}
+}
+
+.bnt
+{
+	size: 12%;
+}
+/************navbar****************/
+.navbar
+{
+	background: #c9c1ac;
+	padding: 20px 20px;
+	transition: all is ease;
+}
+.nav-background
+{
+	padding: 5px 20px;
+}
+.navbar-brand{
+	font-size: 15px;
+	transition: all is ease;
+}
+.navbar-brand:hover{
+	color: #242424;
+}
+.nav-link
+{
+	color: #242424;
+	text-decoration:none;
+	transition: all 2s ease;
+	font-size: 23px;
+}
+.nav-btn
+{
+	background: transparent;
+	color: #d3325f;
+	font-size: 23px;
+	border:2px solid #d3325f;
+	transition: all 2s ease;
+}
+.nav-btn:hover
+{
+	color: #242424;
+	border:2px solid #242424;
+	transform: rotate(10deg);
+}
+.toggler-btn
+{
+	border : 2px solid #d3325f;
+	padding: 5px;
+	transition: all 2s ease;
+}
+.bar
+{
+	width: 30px;
+	height: 30px
+	margin: 5px;
+	background: #d3325f;
+	transition: all 0.5 ease;
+	transition: all 0.5s ease;
+}
+.change .bar1
+{
+	transform: rotate(-45deg) translate(-5px,6px);
+
+}
+.change .bar2
+{
+	opacity: 0;
+}
+.change .bar3
+{
+	transform: rotate(45deg) translate(-5px,-8px);
+
+}
+
+/*items*******************************************************/
+.item-container
+{
+	position: relative;
+	/*for the link*/
+	overflow :hidden;
+	background : linear-gradient(rgba(0,0,0),rgba(0,0,0));
+	transition: all 2s ease;
+}
+.item-img
+{
+	transition: all 2s ease;
+}
+.item-container:hover.item-img
+{
+	transform: scale(1.2);
+	opacity: 0.5;
+}
+.item-link
+{
+	 position:absolute;
+	 top: 50%;
+	 left: 34%;
+	transform:translate(-50%;-50%);
+	color: #d3325f;
+	font-size: 2rem;
+	border-top: 3px solid #d3325f;
+	border-bottom: 3px solid #d3325f;
+	transition: all 2s ease;
+	opacity: 0;
+}
+.item-container :hover .item-link
+{
+	opacity: 1;
+
+}
+.item-link:hover
+{
+	color: #c9c1ac;
+	border: 3px solid #c9c1ac;
+	background-image: gray;
+	color: #c9c1ac;
+
+}
+
+.item-container:hover
+{
+	outline: 5px solid #c9c1ac;
+	outline-offset: -1.8rem;
+}
+/**about/*/
+.about-text
+{
+	font-family:  'Caveat', cursive;
+	font-size: 2rem;
+	color: #c9c1ac;
+}
+.about-pictures{
+	position: relative;
+}
+.about-image
+{
+	position: absolute;
+	width: 150px;
+	transition: all 2s ease;
+	opacity: 0.9;
+}
+.img-1
+{
+	left: 0%;
+	top: 0%;
+}
+.img-2
+{
+	left: 20%;
+	top: 20%;
+	z-index: 10;
+}
+.img-3
+{
+	left: 40%;
+	top: 45%;
+	z-index: 20; 
+}
+.img-4
+{
+	left: 40%;
+	top: 0%;
+}
+.img-5
+{
+	left: 0%;
+	top: 45%;
+}
+.about-image:hover
+{
+	outline: 10px solid #d3325f;
+	outline-offset: 0.8rem;
+	transform: scale(1.3) rotate(20deg); 
+	z-index: 30;
+	opacity: 1;
+}
+.about-pictures:hover .about-image:not(hover)
+{
+	opacity: 0.5;
+}
+/*review*/
+.review-image
+{
+	width: 150px;
+}
+.review-item
+{
+	background: rgba(255,255,255,0.7);
+	clip-path: polygon(5% 0,100% 0,90% 100%,0 100%);
+}
+/*******************team**********************/
+.team-icons a{
+	color: #3b5998; /*fb color*/
+	transition: all 2s ease-in-out;
+}
+.team-icons a:hover
+{
+	color: #242424;
+	transform: translateY(-5px);
+}
+/*************contact************/
+.height-60
+{
+	min-height: 60vh;
+}
+#contact .card
+{
+	background: rgba(0,0,0,0.5);
+	transition: all 2s ease;
+}
+#contact .card:hover
+{
+	background: rgba(0,0,0,0.8);
+}
+#contact .card-header
+{
+	color: #d3325f;
+}
+#contact .input-group-text
+{
+	background: #d3325f;
+	border-color: #242424; 
+	color: #242424;
+}
+#contact .card input
+{
+	color: #606060;
+}
+#contact .card input ::placeholder
+{
+	color: #606060;
+}
+.contact-btn 
+{
+	color: #d3325f;
+	border-color: #d3325f;
+	background:transparent;
+	transition: all 2s ease-in-out;
+}
+.contact-btn :hover
+{
+	background: #c9c1ac;
+	color: #d3325f;
+	border-color: #c9c1ac;
+}
+#back-to-top
+{
+	background: #c9c1ac;
+	border-radius: 10px;
+	display: inline-block;
+}
+.scrollTop
+{
+	position: fixed;
+	bottom: 70px;
+	right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
